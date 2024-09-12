@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import VisualizerShowcase from './components/VisualizerShowcase';
+import PathfinderPage from './components/PathfinderPage';  // Existing Pathfinder page
+import SortingVisualizerPage from './components/SortingVisualizerPage';  // Import the new Sorting Visualizer page
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<VisualizerShowcase />} />
+        <Route path="/pathfinder" element={<PathfinderPage />} />
+        <Route path="/sorting" element={<SortingVisualizerPage />} />  {/* New route for Sorting Visualizer */}
+      </Routes>
+    </Router>
   );
 }
 
