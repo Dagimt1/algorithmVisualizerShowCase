@@ -67,4 +67,13 @@
     object-fit: cover;
     border-radius: 8px;
   }
+  .highlight-link {
+    color: #ff6600;  /* Highlighted color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .highlight-link:hover {
+    text-decoration: underline;
+  }
   

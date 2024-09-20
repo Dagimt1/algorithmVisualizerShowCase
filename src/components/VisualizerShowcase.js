@@ -11,7 +11,7 @@ const VisualizerShowcase = () => {
       <div className="left-section">
         <h1 className="font-serif title">Hey, I'm Dagim 👋</h1>
         <p className="font-serif description">
-          Welcome to the interactive showcase of some of the key components of this project. These visuals will guide you through the core algorithms that are at the heart of the app.
+          Welcome to the interactive showcase of some of the key components of this project. These visuals will guide you through the core algorithms that are at the heart of the app. You can also <a href="https://66da5e2e19010d77c2662ca7--clinquant-tapioca-3a351a.netlify.app/" className="highlight-link">check out the deployed website</a> to experience it live!
         </p>
         <p className="font-serif description">
           <strong>Pathfinder Visualizer:</strong> This component allows you to explore how pathfinding algorithms like A* and Dijkstra's algorithm work. You can see how the algorithm dynamically calculates the shortest path from one point to another, providing a clear visualization of the search process.
